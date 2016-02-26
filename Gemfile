@@ -54,3 +54,7 @@ gem 'font-awesome-sass'
 gem 'omniauth-facebook'
 
 gem 'dotenv-rails', :groups => [:development, :test]
+
+gem "paperclip"
+
+gem 'aws-sdk', '< 2.0'
