@@ -4,7 +4,7 @@ class FriendshipsController < ApplicationController
 	before_action :set_friend
 
 	def create
-		@inverse_friendship = current_user.inverse_friendship.where(user_id: @friend.id)
+		@inverse_friendship = current_user.inverse_friendships.where(user_id: @friend.id)
 		unless @inverse_friendship.blank?
 			@friend.accept_match(current_user)
 			@match = true
